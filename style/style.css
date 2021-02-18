@@ -47,7 +47,9 @@ color: #707070;
     
     max-width: 100%;
     padding: 50px 0px;
-}   
+} 
+.box{
+    opacity: 0; }
 li{
     list-style: none;
 }
@@ -242,6 +244,8 @@ transform:  translateY(-20px) scaleX(1.1);
 }
 
 @media screen and (max-width: 600px){
+    .box{
+    opacity: 1; }
     nav ul li{
        display: none;
     }
