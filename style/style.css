@@ -28,6 +28,7 @@ nav ul li{
 nav ul li a:hover{
     color: #ff523b;
 }
+
 nav ul li a{
 text-decoration: none;
 color: #707070;
@@ -47,6 +48,9 @@ color: #707070;
     max-width: 100%;
     padding: 50px 0px;
 }   
+li{
+    list-style: none;
+}
 .col-2 h1{
 line-height: 60px;
 font-size: 50px;
@@ -216,13 +220,13 @@ transform:  translateY(-20px) scaleX(1.1);
     flex-basis: 12%;
     text-align: center;
 }
-ul{
+.footer ul{
     list-style: none;
 }
-ul li{
+.footer ul li{
     transition: transform 0.5s;
 }
-ul li:hover{
+.footer ul li:hover{
     color: #ff523b;
     cursor: pointer;
     transform: translateX(-15px);
@@ -235,4 +239,33 @@ ul li:hover{
 }
 .app-logo img:hover{
     transform: translateY(-10px);
+}
+
+@media screen and (max-width: 600px){
+    nav ul li{
+       display: none;
+    }
+    .title::before{
+        content: '';
+        background: #ff523b;
+        width: 150px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 23%;
+        transition: translateX(-50%);
+    }
+    .testimoniol .col-3{
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0, 0, 0.3);
+        cursor: pointer;
+        transition:  transform 0.5s;
+    }
+    .col-4{
+        box-shadow: 0px 0px 20px 0px rgba(0,0, 0, 0.1);
+        text-align: center;
+    }
+
 }
